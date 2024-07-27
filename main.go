@@ -111,7 +111,7 @@ func postHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/yaml-to-json", postHandler)
-	fmt.Println("Server is running on http://localhost:8080/yaml-to-json")
+	http.HandleFunc("/tojson", postHandler)
+	fmt.Println("Server is running on http://localhost:8080/tojson")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
